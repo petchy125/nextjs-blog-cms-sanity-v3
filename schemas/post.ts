@@ -70,6 +70,11 @@ export default defineType({
       type: 'reference',
       to: [{ type: authorType.name }],
     }),
+    defineField({
+      title: 'Video file',
+      name: 'video',
+      type: 'mux.video',
+    },),
   ],
   preview: {
     select: {
